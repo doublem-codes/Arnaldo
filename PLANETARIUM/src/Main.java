@@ -3,7 +3,7 @@ import java.lang.System;
 import java.util.ArrayList;
 
 public class Main {
-int i;
+int j;
     public static void main(String[] args) {
         ArrayList celestialBodyArrayList = new ArrayList<CelestialBody>();
         int index = 0;

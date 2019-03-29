@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class SystemStar {
+    int j;
          ArrayList planet = new ArrayList<Planet>;
 
     //private Moon app;

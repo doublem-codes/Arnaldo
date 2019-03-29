@@ -1,5 +1,6 @@
 
 public class CelestialBody {
+    int j;
     private int massa;
     private String name;
     private String id;

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 
 public class Utilty {
+    int j;
     //Utilty utile2 = new Utilty();
 
     public Utilty(){
