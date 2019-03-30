@@ -33,12 +33,11 @@ public class Utilty {
     //State Initialize
     private State state = State.NULL;
 
-    private String str1,str2,str3 ;
+    private String str1,str2,str3, str4 ;
 
 
     public boolean menu(){
         System.out.println(msg1 + "\n" + msgA +"\n" + msgD + "\n" + msgF + "\n" + msgI + "\n" + msgE);
-
         str1 = it.unibs.fp.mylib.InputDati.leggiStringa("\n"+ msg2);
 
         boolean endProcess = false;
@@ -61,9 +60,12 @@ public class Utilty {
                 break;
 
             case "D":
-                System.out.println(msg1 + "\n" + msgDP + "\n" + msgDM);
+                System.out.println(msg1 + "\n" + msgDS + "\n" + msgDP + "\n" + msgDM);
                 str2= it.unibs.fp.mylib.InputDati.leggiStringa("\n" + msg2);
                 switch (str2.toUpperCase()) {
+                    case "S":
+                        state = State.DELETESTAR;
+                        break;
                     case "P":
                         state=State.DELETEPLANET;
                         break;
@@ -108,9 +110,17 @@ public class Utilty {
                 break;
 
             case DELETEPLANET:
+                str3= it.unibs.fp.mylib.InputDati.leggiStringa("Insert the planet name you want to delete: ");
+                int i;
+                for(i=0; i<=systemStar.arrayListCelestianBody.size(); i++) {
+                    if (str3.equals(systemStar.getCelestialBody(i).getName())) {
+                        systemStar.arrayListCelestianBody.remove(i);
+                    }
+                }
                 break;
 
             case DELETEMOON:
+                str4= it.unibs.fp.mylib.InputDati.leggiStringa("Insert the moon name you want to delete: ");
                 break;
             case FIND:
                 break;

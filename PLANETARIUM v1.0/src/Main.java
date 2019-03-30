@@ -12,7 +12,7 @@ int j;
         while( !utility.menu()) {
 
             utility.process();
-            utility.reset();
+
         }
     }
 }

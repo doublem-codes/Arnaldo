@@ -4,15 +4,19 @@ import java.util.ArrayList;
 
 public class SystemStar {
 
-    ArrayList arrayListPlanet = new ArrayList<CelestialBody>();
-    CelestialBody planet = new CelestialBody();
+    ArrayList arrayListCelestianBody = new ArrayList<CelestialBody>();
+    CelestialBody celestialBody = new CelestialBody();
 
-    public ArrayList getArrayListPlanet() {
-        return arrayListPlanet;
+    public ArrayList getArrayListCelestianBody() {
+        return arrayListCelestianBody;
+    }
+
+    public CelestialBody getCelestialBody(int index) {
+        return (CelestialBody) arrayListCelestianBody.get(index);
     }
 
     public void setArrayListPlanet(ArrayList arrayListPlanet) {
-        this.arrayListPlanet = arrayListPlanet;
+        this.arrayListCelestianBody = arrayListPlanet;
     }
 
     public void addCelestialBody(int index, String strType){
@@ -23,9 +27,10 @@ public class SystemStar {
         celestialBody.setName(strName);
         int nMass= InputDati.leggiIntero("Insert mass of"+ strName + ":");
         celestialBody.setMassa(nMass);
-        System.out.println("ID creato: ");
+        celestialBody.setId(strName,0);
+        System.out.println("ID creato: " + celestialBody.getId());
 
-        arrayListPlanet.add(celestialBody);
+        arrayListCelestianBody.add(celestialBody);
 
 
     }
