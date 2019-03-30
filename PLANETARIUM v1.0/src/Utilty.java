@@ -33,7 +33,7 @@ public class Utilty {
     //State Initialize
     private State state = State.NULL;
 
-    private String str1,str2,str3 ;
+    private String str1,str2,str3, str4 ;
 
 
     public boolean menu(){
@@ -110,13 +110,18 @@ public class Utilty {
                 systemStar.addCelestialBody(0, "Moon");
                 break;
 
-            case DELETESTAR:
-                break;
-
             case DELETEPLANET:
+                str3= it.unibs.fp.mylib.InputDati.leggiStringa("Insert the planet name you want to delete: ");
+                int i;
+                for(i=0; i<=systemStar.arrayListCelestianBody.size(); i++) {
+                    if (str3.equals(systemStar.getCelestialBody(i).getName())) {
+                        systemStar.arrayListCelestianBody.remove(i);
+                    }
+                }
                 break;
 
             case DELETEMOON:
+                str4= it.unibs.fp.mylib.InputDati.leggiStringa("Insert the moon name you want to delete: ");
                 break;
             case FIND:
                 break;

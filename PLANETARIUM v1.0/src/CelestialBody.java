@@ -35,6 +35,7 @@ public class CelestialBody {
         return id;
     }
 
+
     public void setId(String strings , int index){
         String output = Integer.toString(index);//conversion int to string
         String stringTrim = strings.trim();//delete space from string
