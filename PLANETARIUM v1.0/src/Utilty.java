@@ -37,7 +37,7 @@ public class Utilty {
 
 
     public boolean menu(){
-        System.out.println(msg1 + "\n" + msgA +"\n" + msgD + "\n" + msgD + "\n" + msgF + "\n" + msgI + "\n" + msgE);
+        System.out.println(msg1 + "\n" + msgA +"\n" + msgD + "\n" + msgF + "\n" + msgI + "\n" + msgE);
         str1 = it.unibs.fp.mylib.InputDati.leggiStringa("\n"+ msg2);
 
         boolean endProcess = false;

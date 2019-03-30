@@ -38,17 +38,20 @@ public class CelestialBody {
     public void setId(String strings , int index){
         String output = Integer.toString(index);//conversion int to string
         String stringTrim = strings.trim();//delete space from string
-        String app = deleteVocal(stringTrim.toLowerCase());//deletevocal from string
-        this.id =output + app.substring(0, 4);// return index + substring of 4 element
+        String app = deleteVocal(stringTrim.toUpperCase());//deletevocal from string
+        String app1 = app.substring(0, 4);
+        this.id =output + app1;// return index + substring of 4 element
     }
 
-    private static String deleteVocal(String dataInput) {
-        if (dataInput.equals("")) return "";
-        else if (dataInput.charAt(0)=='a'||
-                dataInput.charAt(0)=='e'||
-                dataInput.charAt(0)=='i'||
-                dataInput.charAt(0)=='o'||
-                dataInput.charAt(0)=='u') return deleteVocal(dataInput.substring(1));
-        else return dataInput.substring(0,1) + deleteVocal(dataInput.substring(1));
+    private static String deleteVocal(String s) {
+
+        if (s.equals("")) return "";
+        else if (s.charAt(0)=='A'||
+                s.charAt(0)=='E'||
+                s.charAt(0)=='I'||
+                s.charAt(0)=='O'||
+                s.charAt(0)=='U'
+        ) return deleteVocal(s.substring(1));
+        else return s.substring(0,1) + deleteVocal(s.substring(1));
     }
 }

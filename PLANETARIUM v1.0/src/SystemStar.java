@@ -23,8 +23,8 @@ public class SystemStar {
         celestialBody.setName(strName);
         int nMass= InputDati.leggiIntero("Insert mass of"+ strName + ":");
         celestialBody.setMassa(nMass);
-        celestialBody.setId(strName);
-        System.out.println("ID creato: ");
+        celestialBody.setId(strName,0);
+        System.out.println("ID creato: " + celestialBody.getId());
 
         arrayListPlanet.add(celestialBody);
 
