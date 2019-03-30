@@ -18,6 +18,14 @@ public class Point {
     public void setX(int x) {
         this.x = x;
     }
+    public Point convertionPos(Point punti ,Point puntos){
+        Point pointReturn = new Point();
+        pointReturn.x = punti.x + puntos.x;
+        pointReturn.y = punti.y + puntos.y;
+        return punti;
+    }
+
+
 }
 
 

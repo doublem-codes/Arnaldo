@@ -34,10 +34,12 @@ public class CelestialBody {
     public String getId(){
         return id;
     }
-    public void setId(String strings){
-        String stringTrim = strings.trim();
-        String app = deleteVocal(stringTrim.toLowerCase());
-        this.id = app.substring(0,4);
+
+    public void setId(String strings , int index){
+        String output = Integer.toString(index);//conversion int to string
+        String stringTrim = strings.trim();//delete space from string
+        String app = deleteVocal(stringTrim.toLowerCase());//deletevocal from string
+        this.id =output + app.substring(0, 4);// return index + substring of 4 element
     }
 
     private static String deleteVocal(String dataInput) {
