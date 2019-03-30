@@ -7,6 +7,5 @@ public enum State {
     DELETEMOON,
     FIND,
     INFO,
-    NULL,
-    E
+    NULL
 }

@@ -37,7 +37,8 @@ public class Utilty {
 
 
     public boolean menu(){
-        System.out.println(msg1 + "\n" + msgA +"\n" + msgD + "\n" + msgD + "\n" + msgF + "\n" + msgI + "\n" + msgE);
+        System.out.println(msg1 + "\n" + msgA +"\n" + msgD + "\n" + msgF + "\n" + msgI + "\n" + msgE);
+
         str1 = it.unibs.fp.mylib.InputDati.leggiStringa("\n"+ msg2);
 
         boolean endProcess = false;
@@ -60,12 +61,9 @@ public class Utilty {
                 break;
 
             case "D":
-                System.out.println(msg1 + "\n" + msgDS + "\n" + msgDP + "\n" + msgDM);
+                System.out.println(msg1 + "\n" + msgDP + "\n" + msgDM);
                 str2= it.unibs.fp.mylib.InputDati.leggiStringa("\n" + msg2);
                 switch (str2.toUpperCase()) {
-                    case "S":
-                        state = State.DELETESTAR;
-                        break;
                     case "P":
                         state=State.DELETEPLANET;
                         break;
@@ -107,9 +105,6 @@ public class Utilty {
 
             case ADDMOON:
                 systemStar.addCelestialBody(0, "Moon");
-                break;
-
-            case DELETESTAR:
                 break;
 
             case DELETEPLANET:
