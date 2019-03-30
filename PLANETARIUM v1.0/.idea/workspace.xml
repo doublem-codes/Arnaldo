@@ -2,8 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5817c5f-d124-41f1-8c94-8e7356750e6e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLANETARIUM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PLANETARIUM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLANETARIUM/CelestialBody.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLANETARIUM/CelestialBody.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLANETARIUM/SystemStar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLANETARIUM/SystemStar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLANETARIUM/Utilty$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLANETARIUM/Utilty$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLANETARIUM/Utilty.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLANETARIUM/Utilty.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CelestialBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CelestialBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/State.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SystemStar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SystemStar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/BelleStringhe.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/BelleStringhe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/EstrazioniCasuali.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/EstrazioniCasuali.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/InputDati.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/InputDati.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/MyMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/MyMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/NumeriCasuali.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/NumeriCasuali.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/ServizioFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/ServizioFile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Utilty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utilty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PLANETARIUM/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../PLANETARIUM/.idea/description.html" beforeDir="false" />
@@ -78,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SystemStar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="1242">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,27 +109,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/CelestialBody.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
-              <folding>
-                <element signature="e#792#793#0" expanded="true" />
-                <element signature="e#817#818#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="e#254#255#0" expanded="true" />
-                <element signature="e#280#281#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="552">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -116,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Utilty.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="78" column="22" lean-forward="true" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
+            <state relative-caret-position="2806">
+              <caret line="123" column="22" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,10 +153,10 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Moon.java" />
         <option value="$PROJECT_DIR$/src/Planet.java" />
-        <option value="$PROJECT_DIR$/src/Point.java" />
-        <option value="$PROJECT_DIR$/src/SystemStar.java" />
-        <option value="$PROJECT_DIR$/src/CelestialBody.java" />
         <option value="$PROJECT_DIR$/src/Utilty.java" />
+        <option value="$PROJECT_DIR$/src/CelestialBody.java" />
+        <option value="$PROJECT_DIR$/src/SystemStar.java" />
+        <option value="$PROJECT_DIR$/src/Point.java" />
       </list>
     </option>
   </component>
@@ -168,7 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -186,6 +189,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -193,7 +197,7 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553957242404" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553959898403" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -246,17 +250,19 @@
       <workItem from="1553887165399" duration="937000" />
       <workItem from="1553948301217" duration="868000" />
       <workItem from="1553949448359" duration="2064000" />
+      <workItem from="1553958876750" duration="1348000" />
+      <workItem from="1553960550836" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26600000" />
+    <option name="totallyTimeSpent" value="27957000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08723748" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08885299" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -349,38 +355,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CelestialBody.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="e#792#793#0" expanded="true" />
-            <element signature="e#817#818#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Utilty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="78" column="22" lean-forward="true" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CelestialBody.java" />
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -391,10 +366,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Utilty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2806">
+          <caret line="123" column="22" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SystemStar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="1242">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

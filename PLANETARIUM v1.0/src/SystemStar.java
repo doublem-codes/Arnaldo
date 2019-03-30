@@ -7,13 +7,20 @@ public class SystemStar {
     ArrayList arrayListPlanet = new ArrayList<CelestialBody>();
     CelestialBody planet = new CelestialBody();
 
+
+
+
+
     public ArrayList getArrayListPlanet() {
+
         return arrayListPlanet;
     }
 
     public void setArrayListPlanet(ArrayList arrayListPlanet) {
         this.arrayListPlanet = arrayListPlanet;
     }
+
+
 
     public void addCelestialBody(int index, String strType){
         CelestialBody celestialBody =  new CelestialBody();
