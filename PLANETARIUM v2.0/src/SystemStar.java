@@ -19,33 +19,72 @@ public class SystemStar {
         this.arrayListCelestianBody = arrayListPlanet;
     }
 
-    public void addCelestialBody(int index, String strType){
+    public void addCelestialBody(int index, String strType, TypeOfCelestianBody typeOfCelestianBody){
         CelestialBody celestialBody =  new CelestialBody();
+        switch (typeOfCelestianBody){
+            case STAR:
+                String strName1=it.unibs.fp.mylib.InputDati.leggiStringa("Insert name "+ strType +":");
+                celestialBody.setName(strName1);
+                int nMass1= InputDati.leggiIntero("Insert mass of"+ strName1 + ":");
+                celestialBody.setMassa(nMass1);
+                celestialBody.setId(strName1,0);
+                System.out.println("ID creato: " + celestialBody.getId());
+                arrayListCelestianBody.add(0,celestialBody);
+                break;
+            case PLANET:
+                String strName2=it.unibs.fp.mylib.InputDati.leggiStringa("Insert name "+ strType +":");
+                celestialBody.setName(strName2);
+                int nMass2= InputDati.leggiIntero("Insert mass of"+ strName2 + ":");
+                celestialBody.setMassa(nMass2);
+                celestialBody.setId(strName2,0);
+                System.out.println("ID creato: " + celestialBody.getId());
+                arrayListCelestianBody.add(celestialBody);
+                break;
+            case MOON:
+                String strName3=it.unibs.fp.mylib.InputDati.leggiStringa("Insert name "+ strType +":");
+                celestialBody.setName(strName3);
+                int nMass3= InputDati.leggiIntero("Insert mass of"+ strName3 + ":");
+                celestialBody.setMassa(nMass3);
+                String strNamePlanet=InputDati.leggiStringa("Insert the planet: ");
+                int indexPlanet = findIndexCelestianBody(strNamePlanet);
+                //Da sistemare con l'ID del pianeta corrispondente
+                //celestialBody.setId(strName3,0);
+                //System.out.println("ID creato: " + celestialBody.getId());
+                //Insert the moon at the position of the planet +1
+
+                //-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+                //ERROR
+                //-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+                arrayListCelestianBody.add(indexPlanet+1,celestialBody);
+                break;
+        }
 
 
-        String strName=it.unibs.fp.mylib.InputDati.leggiStringa("Insert name "+ strType +":");
-        celestialBody.setName(strName);
-        int nMass= InputDati.leggiIntero("Insert mass of"+ strName + ":");
-        celestialBody.setMassa(nMass);
-        celestialBody.setId(strName,0);
-        System.out.println("ID creato: " + celestialBody.getId());
 
-        arrayListCelestianBody.add(celestialBody);
+
+
     }
 
-    public boolean deleteCelestianBody(String strCelestianBody){
+    public boolean deleteCelestianBody(String strType){
 
-        String str2= it.unibs.fp.mylib.InputDati.leggiStringa("Insert the planet name you want to delete: ");
+        String str2= it.unibs.fp.mylib.InputDati.leggiStringa("Insert the" + strType +" name you want to delete: ");
+        arrayListCelestianBody.remove(findIndexCelestianBody(str2));
+        if (findIndexCelestianBody(str2) == -1){
+            return false;
+        }
+        return true;
+    }
+
+    public int findIndexCelestianBody(String strCelestianbody){
+        int index=-1;
         int i;
         for(i=0; i<=arrayListCelestianBody.size(); i++) {
-            if (str2.equals(getCelestialBody(i).getName())) {
-                arrayListCelestianBody.remove(i);
+            if (strCelestianbody.equals(getCelestialBody(i).getName())) {
+                index=i;
             }
         }
-        return false;
+        return index;
     }
-
-
 
     public void calculateMiddle(){
 
@@ -55,7 +94,7 @@ public class SystemStar {
 
     }
 
-    public boolean findCelestialBody (){
+    public boolean findCelestialBody (String strType){
 
         return false;
     }

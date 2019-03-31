@@ -98,30 +98,29 @@ public class Utilty {
 
         switch (state) {
             case ADDSTAR:
-                systemStar.addCelestialBody(0, "Star");
+                systemStar.addCelestialBody(0, "Star", TypeOfCelestianBody.STAR);
                 break;
 
             case ADDPLANET:
-                systemStar.addCelestialBody(0, "Planet");
+                systemStar.addCelestialBody(0, "Planet",TypeOfCelestianBody.PLANET);
                 break;
 
             case ADDMOON:
-                systemStar.addCelestialBody(0, "Moon");
+                systemStar.addCelestialBody(0, "Moon",TypeOfCelestianBody.MOON);
                 break;
 
             case DELETEPLANET:
-
+                if(! systemStar.deleteCelestianBody("planet")){
+                    System.out.println("Planet not found");
+            }
                 break;
 
             case DELETEMOON:
-                str2= it.unibs.fp.mylib.InputDati.leggiStringa("Insert the moon name you want to delete: ");
-                int j;
-                for(j=0; j<=systemStar.arrayListCelestianBody.size(); j++) {
-                    if (str2.equals(systemStar.getCelestialBody(j).getName())) {
-                        systemStar.arrayListCelestianBody.remove(j);
-                    }
+                if(! systemStar.deleteCelestianBody("moon")){
+                    System.out.println("Moon not found");
                 }
                 break;
+
             case FIND:
                 break;
 
