@@ -7,17 +7,29 @@ public class SystemStar {
     ArrayList arrayListCelestianBody = new ArrayList<CelestialBody>();
     CelestialBody celestialBody = new CelestialBody();
 
+<<<<<<< HEAD
+
+
+
+
+    public ArrayList getArrayListPlanet() {
+
+        return arrayListPlanet;
+=======
     public ArrayList getArrayListCelestianBody() {
         return arrayListCelestianBody;
     }
 
     public CelestialBody getCelestialBody(int index) {
         return (CelestialBody) arrayListCelestianBody.get(index);
+>>>>>>> 25c0392781aecf023e12f0b95622fb2887d74153
     }
 
     public void setArrayListPlanet(ArrayList arrayListPlanet) {
         this.arrayListCelestianBody = arrayListPlanet;
     }
+
+
 
     public void addCelestialBody(int index, String strType){
         CelestialBody celestialBody =  new CelestialBody();

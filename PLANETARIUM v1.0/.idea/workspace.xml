@@ -2,16 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5817c5f-d124-41f1-8c94-8e7356750e6e" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PLANETARIUM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PLANETARIUM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PLANETARIUM/CelestialBody.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLANETARIUM/CelestialBody.class" afterDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PLANETARIUM/CelestialBody.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLANETARIUM/CelestialBody.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PLANETARIUM/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLANETARIUM/State.class" afterDir="false" />
+>>>>>>> 25c0392781aecf023e12f0b95622fb2887d74153
       <change beforePath="$PROJECT_DIR$/out/production/PLANETARIUM/SystemStar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLANETARIUM/SystemStar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PLANETARIUM/Utilty$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLANETARIUM/Utilty$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/PLANETARIUM/Utilty.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PLANETARIUM/Utilty.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CelestialBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CelestialBody.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/src/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Point.java" afterDir="false" />
+=======
+>>>>>>> 25c0392781aecf023e12f0b95622fb2887d74153
       <change beforePath="$PROJECT_DIR$/src/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/State.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SystemStar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SystemStar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/BelleStringhe.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/BelleStringhe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/EstrazioniCasuali.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/EstrazioniCasuali.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/InputDati.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/InputDati.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/MyMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/MyMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/NumeriCasuali.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/NumeriCasuali.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/ServizioFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/UniBSFpLib/bin/it/unibs/fp/mylib/ServizioFile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Utilty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utilty.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,8 +63,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SystemStar.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="1242">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+=======
             <state relative-caret-position="286">
               <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+>>>>>>> 25c0392781aecf023e12f0b95622fb2887d74153
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#269#270#0" expanded="true" />
@@ -55,6 +82,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/src/Point.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+=======
         <entry file="file://$PROJECT_DIR$/src/CelestialBody.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
@@ -72,6 +105,7 @@
                 <element signature="e#254#255#0" expanded="true" />
                 <element signature="e#280#281#0" expanded="true" />
               </folding>
+>>>>>>> 25c0392781aecf023e12f0b95622fb2887d74153
             </state>
           </provider>
         </entry>
@@ -79,8 +113,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Utilty.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="2806">
+              <caret line="123" column="22" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="22" />
+=======
             <state relative-caret-position="303">
               <caret line="122" column="108" selection-start-line="122" selection-start-column="108" selection-end-line="122" selection-end-column="108" />
+>>>>>>> 25c0392781aecf023e12f0b95622fb2887d74153
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3989#3990#0" expanded="true" />
@@ -122,11 +161,17 @@
         <option value="$PROJECT_DIR$/src/State.java" />
         <option value="$PROJECT_DIR$/src/Moon.java" />
         <option value="$PROJECT_DIR$/src/Planet.java" />
+<<<<<<< HEAD
+=======
         <option value="$PROJECT_DIR$/src/Point.java" />
         <option value="$PROJECT_DIR$/src/CelestialBody.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/SystemStar.java" />
+>>>>>>> 25c0392781aecf023e12f0b95622fb2887d74153
         <option value="$PROJECT_DIR$/src/Utilty.java" />
+        <option value="$PROJECT_DIR$/src/CelestialBody.java" />
+        <option value="$PROJECT_DIR$/src/SystemStar.java" />
+        <option value="$PROJECT_DIR$/src/Point.java" />
       </list>
     </option>
   </component>
@@ -142,6 +187,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+      <pane id="PackagesPane" />
+=======
+>>>>>>> 25c0392781aecf023e12f0b95622fb2887d74153
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,7 +207,10 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
       <pane id="PackagesPane" />
+>>>>>>> 25c0392781aecf023e12f0b95622fb2887d74153
       <pane id="Scope" />
     </panes>
   </component>
@@ -167,7 +219,7 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553957242404" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553959898403" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -220,19 +272,32 @@
       <workItem from="1553887165399" duration="937000" />
       <workItem from="1553948301217" duration="868000" />
       <workItem from="1553949448359" duration="2064000" />
+<<<<<<< HEAD
+      <workItem from="1553958876750" duration="1348000" />
+      <workItem from="1553960550836" duration="9000" />
+=======
       <workItem from="1553957771321" duration="21000" />
       <workItem from="1553957811221" duration="2518000" />
+>>>>>>> 25c0392781aecf023e12f0b95622fb2887d74153
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="27957000" />
+=======
     <option name="totallyTimeSpent" value="29139000" />
+>>>>>>> 25c0392781aecf023e12f0b95622fb2887d74153
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="27" width="1317" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08885299" />
+=======
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26199841" />
+>>>>>>> 25c0392781aecf023e12f0b95622fb2887d74153
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -311,27 +376,52 @@
     <entry file="file://$PROJECT_DIR$/src/Moon.java" />
     <entry file="file://$PROJECT_DIR$/src/Planet.java" />
     <entry file="jar:///usr/lib/jvm/jdk-11.0.2/lib/src.zip!/java.base/java/lang/String.java" />
+<<<<<<< HEAD
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="1873" selection-start-line="1873" selection-end-line="1873" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CelestialBody.java" />
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+=======
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/String.java" />
     <entry file="file://$PROJECT_DIR$/src/Point.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
+>>>>>>> 25c0392781aecf023e12f0b95622fb2887d74153
           <folding>
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+=======
     <entry file="file://$PROJECT_DIR$/src/State.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+>>>>>>> 25c0392781aecf023e12f0b95622fb2887d74153
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="2806">
+          <caret line="123" column="22" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="22" />
+=======
         <state relative-caret-position="281">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
@@ -344,6 +434,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+>>>>>>> 25c0392781aecf023e12f0b95622fb2887d74153
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#269#270#0" expanded="true" />
@@ -363,8 +454,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Utilty.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="1242">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+=======
         <state relative-caret-position="303">
           <caret line="122" column="108" selection-start-line="122" selection-start-column="108" selection-end-line="122" selection-end-column="108" />
+>>>>>>> 25c0392781aecf023e12f0b95622fb2887d74153
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3989#3990#0" expanded="true" />
