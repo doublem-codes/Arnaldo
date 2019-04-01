@@ -6,7 +6,6 @@ public class SystemStar {
 
     ArrayList arrayListCelestianBody = new ArrayList<CelestialBody>();
     CelestialBody celestialBody = new CelestialBody();
-    Point pointMiddle = new Point();
 
     public ArrayList getArrayListCelestianBody() {
         return arrayListCelestianBody;
@@ -80,18 +79,8 @@ public class SystemStar {
         return i=-1;
     }
 
-    public Point calculateMiddle(){
-        Point point = new Point();
-        float x = 0,y = 0;
-        float sommaMasse = 0 ;
-        for (int i = 0; i < arrayListCelestianBody.size(); i++){
-            sommaMasse += getCelestialBody(i).getMassa();
-            x += getCelestialBody(i).getMassa() * getCelestialBody(i).getPositionAbs().getX();
-            y += getCelestialBody(i).getMassa() * getCelestialBody(i).getPositionAbs().getY();
-        }
-        point.setX(x/sommaMasse);
-        point.setY(y/sommaMasse);
-        return point;
+    public void calculateMiddle(){
+
     }
 
     public void printInfoBody(){
