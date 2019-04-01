@@ -64,10 +64,10 @@ public class SystemStar {
 
         String str2= it.unibs.fp.mylib.InputDati.leggiStringa("Insert the" + strType +" name you want to delete: ");
         arrayListCelestianBody.remove(findIndexCelestianBody(str2));
-        if (findIndexCelestianBody(str2) == -1){
-            return false;
+        if (findIndexCelestianBody(str2) != -1){
+            return true;
         }
-        return true;
+        return false;
     }
 
     public int findIndexCelestianBody(String strCelestianbody){
@@ -100,21 +100,22 @@ public class SystemStar {
 
     public boolean findCelestialBody (String strType, TypeOfCelestianBody typeOfCelestianBody) {
         switch (typeOfCelestianBody) {
-            case STAR:
-
-
-                break;
             case PLANET:
-                String strName2 = it.unibs.fp.mylib.InputDati.leggiStringa("Insert name " + strType + "you want to find:");
-
+                String str2= it.unibs.fp.mylib.InputDati.leggiStringa("Insert the" + strType +" name you want to find: ");
+                if (findIndexCelestianBody(str2) != -1){
+                    System.out.println("planet found");
+                    return true;
+                }
                 break;
+
             case MOON:
-                String strName3 = it.unibs.fp.mylib.InputDati.leggiStringa("Insert name " + strType + "you want to find:");
+                String str3= it.unibs.fp.mylib.InputDati.leggiStringa("Insert the" + strType +" name you want to find: ");
+
 
                 break;
         }
 
-        return true;
+        return false;
     }
 
 
