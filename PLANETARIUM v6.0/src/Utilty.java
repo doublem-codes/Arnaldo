@@ -152,8 +152,27 @@ public class Utilty {
                 break;
 
             case INFO:
-                break;
+                System.out.println("Select a type of celestial body you want to print the info about:" + "\n" + "[P]: planet"+ "\n" + "[M]: moon");
+                str2= it.unibs.fp.mylib.InputDati.leggiStringa("\n" + msg2);
+                switch (str2.toUpperCase()) {
 
+                    case "P":
+                        typeOfCelestianBody=TypeOfCelestianBody.PLANET;
+                        break;
+                    case "M":
+                        typeOfCelestianBody=TypeOfCelestianBody.MOON;
+                        break;
+                }
+                String strType2 = "";
+                if (typeOfCelestianBody==TypeOfCelestianBody.PLANET){
+                    strType2="planet";
+                }else if(typeOfCelestianBody == TypeOfCelestianBody.MOON){
+                    strType2="moon";
+                }
+                if(!systemStar.printInfoBody(strType2,typeOfCelestianBody)){
+                    System.out.println(strType2 + "not found");
+                }
+                break;
 
             case CALCULATEMIDDLE:
                 systemStar.pointMiddle = systemStar.calculateMiddle();

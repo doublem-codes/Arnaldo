@@ -77,7 +77,7 @@ public class SystemStar {
                 return i;
             }
         }
-        return i=-1;
+        return -1;
     }
 
     public Point calculateMiddle(){
@@ -94,8 +94,43 @@ public class SystemStar {
         return point;
     }
 
-    public void printInfoBody(){
+    public boolean printInfoBody(String strType, TypeOfCelestianBody typeOfCelestianBody){
 
+        switch (typeOfCelestianBody) {
+            case PLANET:
+                String str2= it.unibs.fp.mylib.InputDati.leggiStringa("Insert the" + strType +" name you want to print the info about ");
+                if (findIndexCelestianBody(str2) != -1){
+                    int i;
+                    boolean flag =false;
+                    for (i=findIndexCelestianBody(str2)+1;flag;i++){
+                        if (getCelestialBody(i).id.typeOfCelestianBody != TypeOfCelestianBody.PLANET){
+                            System.out.println(getCelestialBody(i).getName());
+                        }else {
+                            flag=true;
+                        }
+                    }
+                    return true;
+                }
+                break;
+
+            case MOON:
+                String str3= it.unibs.fp.mylib.InputDati.leggiStringa("Insert the" + strType +" name you want to print the info about: ");
+                if (findIndexCelestianBody(str3) != -1){
+                    int i;
+                    boolean flag=false;
+                    for (i=findIndexCelestianBody(str3)-1;flag;i--){
+                        if (getCelestialBody(i).id.typeOfCelestianBody == TypeOfCelestianBody.PLANET) {
+                            System.out.println(getCelestialBody(0).getName() + "->" +getCelestialBody(i).getName() + str3);
+                            flag = true;
+                        }
+                    }
+                    return true;
+                }
+
+                break;
+        }
+
+        return false;
     }
 
     public boolean findCelestialBody (String strType, TypeOfCelestianBody typeOfCelestianBody) {
@@ -110,7 +145,18 @@ public class SystemStar {
 
             case MOON:
                 String str3= it.unibs.fp.mylib.InputDati.leggiStringa("Insert the" + strType +" name you want to find: ");
-
+                if (findIndexCelestianBody(str3) != -1){
+                    System.out.println("moon planet found");
+                    int i;
+                    boolean flag=false;
+                    for(i=findIndexCelestianBody(str3);flag; i--){
+                        if(getCelestialBody(i).id.typeOfCelestianBody==TypeOfCelestianBody.PLANET){
+                            System.out.println("The planet is:" + getCelestialBody(i).getName());
+                            flag=true;
+                        }
+                    }
+                    return true;
+                }
 
                 break;
         }
