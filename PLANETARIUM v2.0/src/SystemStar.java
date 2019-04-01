@@ -25,7 +25,7 @@ public class SystemStar {
             case STAR:
                 String strName1=it.unibs.fp.mylib.InputDati.leggiStringa("Insert name "+ strType +":");
                 celestialBody.setName(strName1);
-                int nMass1= InputDati.leggiIntero("Insert mass of"+ strName1 + ":");
+                int nMass1= InputDati.leggiIntero("Insert mass of "+ strName1 + ":");
                 celestialBody.setMassa(nMass1);
                 celestialBody.setId(strName1,0);
                 System.out.println("ID creato: " + celestialBody.getId());
@@ -34,7 +34,7 @@ public class SystemStar {
             case PLANET:
                 String strName2=it.unibs.fp.mylib.InputDati.leggiStringa("Insert name "+ strType +":");
                 celestialBody.setName(strName2);
-                int nMass2= InputDati.leggiIntero("Insert mass of"+ strName2 + ":");
+                int nMass2= InputDati.leggiIntero("Insert mass of "+ strName2 + ":");
                 celestialBody.setMassa(nMass2);
                 celestialBody.setId(strName2,0);
                 System.out.println("ID creato: " + celestialBody.getId());
@@ -43,18 +43,12 @@ public class SystemStar {
             case MOON:
                 String strName3=it.unibs.fp.mylib.InputDati.leggiStringa("Insert name "+ strType +":");
                 celestialBody.setName(strName3);
-                int nMass3= InputDati.leggiIntero("Insert mass of"+ strName3 + ":");
+                int nMass3= InputDati.leggiIntero("Insert mass of "+ strName3 + ":");
                 celestialBody.setMassa(nMass3);
                 String strNamePlanet=InputDati.leggiStringa("Insert the planet: ");
                 int indexPlanet = findIndexCelestianBody(strNamePlanet);
-                //Da sistemare con l'ID del pianeta corrispondente
-                //celestialBody.setId(strName3,0);
-                //System.out.println("ID creato: " + celestialBody.getId());
-                //Insert the moon at the position of the planet +1
-
-                //-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-                //ERROR
-                //-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+                celestialBody.setId(strName3,0);
+                System.out.println("\nID creato: " + celestialBody.getId()+ "\n");
                 arrayListCelestianBody.add(indexPlanet+1,celestialBody);
                 break;
         }
@@ -76,14 +70,13 @@ public class SystemStar {
     }
 
     public int findIndexCelestianBody(String strCelestianbody){
-        int index=-1;
         int i;
-        for(i=0; i<=arrayListCelestianBody.size(); i++) {
+        for(i=0; i<arrayListCelestianBody.size(); i++) {
             if (strCelestianbody.equals(getCelestialBody(i).getName())) {
-                index=i;
+                return i;
             }
         }
-        return index;
+        return i=-1;
     }
 
     public void calculateMiddle(){

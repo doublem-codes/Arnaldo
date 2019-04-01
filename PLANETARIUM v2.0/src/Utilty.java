@@ -15,6 +15,7 @@ public class Utilty {
     private String msgE = "[E]: End process";
     private String msgF = "[F]: Find a celestian body";
     private String msgI = "[I]: Info about a celestian body";
+    private String msgC = "[C]: Calculate system mass middle";
 
     //ADD message
     private String msgAM = "[M]: Add a moon";
@@ -37,7 +38,7 @@ public class Utilty {
 
 
     public boolean menu(){
-        System.out.println(msg1 + "\n" + msgA +"\n" + msgD + "\n" + msgF + "\n" + msgI + "\n" + msgE);
+        System.out.println(msg1 + "\n" + msgA +"\n" + msgD + "\n" + msgF + "\n" + msgI + "\n" + msgE + "\n" + msgC);
         str1 = it.unibs.fp.mylib.InputDati.leggiStringa("\n"+ msg2);
 
         boolean endProcess = false;
@@ -74,6 +75,7 @@ public class Utilty {
                         break;
                 }
                 break;
+
             case "F":
                 state = State.FIND;
                 break;
@@ -84,8 +86,12 @@ public class Utilty {
                 System.out.println("End process");
                 endProcess = true;
                 break;
+
+            case "C":
+                state=State.CALCULATEMIDDLE;
+                break;
             default:
-                state = State.NULL;// richiamo utility menu;
+                state = State.NULL;
                 break;
         }
         return endProcess;

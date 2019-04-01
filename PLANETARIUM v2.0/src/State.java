@@ -8,5 +8,5 @@ public enum State {
     FIND,
     INFO,
     NULL,
-    E
+    CALCULATEMIDDLE
 }
