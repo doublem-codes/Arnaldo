@@ -32,6 +32,7 @@ public class CelestialBody {
     public Point getPositionAbs() {
         return positionAbs;
     }
+
     public void setPositionAbs(Point positionAbs) {
         this.positionAbs = positionAbs;
     }
@@ -39,12 +40,15 @@ public class CelestialBody {
     public int getMassa() {
         return massa;
     }
+
     public void setMassa(int massa) {
         this.massa = massa;
     }
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }

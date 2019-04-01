@@ -1,5 +1,5 @@
 public class Point {
-
+    //class to point
     private float x;
     private float y;
 
@@ -7,7 +7,6 @@ public class Point {
         this.x = x;
         this.y = y;
     }
-
 
     public float getY() {
         return y;
@@ -23,11 +22,6 @@ public class Point {
 
     public void setX(float x) {
         this.x = x;
-    }
-
-    public Point convertionPos(Point punti ,Point puntos){
-        Point pointReturn = new Point((punti.x + puntos.x),(punti.y + puntos.y));
-        return pointReturn;
     }
 
 }

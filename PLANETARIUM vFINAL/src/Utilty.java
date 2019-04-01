@@ -11,7 +11,6 @@ public class Utilty {
     private String msgC = "[C]: Calculate system mass middle";
     //ADD message
     private String msgAM = "[M]: Add a moon";
-    private String msgAS = "[S]: Add a star";
     private String msgAP = "[P]: Add a planet";
     //DELETE message
     private String msgDM = "[M]: Delete a moon";
@@ -23,25 +22,24 @@ public class Utilty {
     //State Initialize
     private State state = State.NULL;
     private TypeOfCelestianBody typeOfCelestianBody = TypeOfCelestianBody.NULL;
-    private String str1,str2,str3, str4 ;
     private boolean bool = true;
+
     SystemStar systemStar = new SystemStar();
+    Point middle = new Point(0,0);
 
     public boolean menu(){
         System.out.println(msg1 + "\n" + msgA +"\n" + msgD + "\n" + msgF + "\n" + msgI + "\n" + msgC+ "\n" + msgE);
-        str1 = it.unibs.fp.mylib.InputDati.leggiStringa("\n"+ msg2);
-
         boolean endProcess = false;
 
-        switch (str1.toUpperCase()){
+        switch (it.unibs.fp.mylib.InputDati.leggiStringa("\n"+ msg2).toUpperCase()){
             case "A":
                 System.out.println(msg1);
                 if(bool){
-                    System.out.print("\n" +msgAS);
+                    String msgAS = "[S]: Add a star";
+                    System.out.print("\n" + msgAS);
                 }
                 System.out.print( "\n" + msgAP +"\n" +msgAM);
-                str2= it.unibs.fp.mylib.InputDati.leggiStringa("\n" + msg2);
-                switch (str2.toUpperCase()) {
+                switch (it.unibs.fp.mylib.InputDati.leggiStringa("\n" + msg2).toUpperCase()) {
                     case "S":
                         state = State.ADDSTAR;
                         bool = false;
@@ -57,8 +55,7 @@ public class Utilty {
 
             case "D":
                 System.out.println(msg1 + "\n" + msgDS + "\n" + msgDP + "\n" + msgDM);
-                str2= it.unibs.fp.mylib.InputDati.leggiStringa("\n" + msg2);
-                switch (str2.toUpperCase()) {
+                switch (it.unibs.fp.mylib.InputDati.leggiStringa("\n" + msg2).toUpperCase()) {
                     case "S":
                         state = State.DELETESTAR;
                         bool = true;
@@ -71,7 +68,6 @@ public class Utilty {
                         break;
                 }
                 break;
-
             case "F":
                 state = State.FIND;
                 break;
@@ -95,19 +91,18 @@ public class Utilty {
 
     public void process(){
 
-        int index = 0;
-
         switch (state) {
+
             case ADDSTAR:
-                systemStar.addCelestialBody(0, "Star", TypeOfCelestianBody.STAR);
+                systemStar.addCelestialBody( "Star", TypeOfCelestianBody.STAR);
                 break;
 
             case ADDPLANET:
-                systemStar.addCelestialBody(0, "Planet",TypeOfCelestianBody.PLANET);
+                systemStar.addCelestialBody( "Planet",TypeOfCelestianBody.PLANET);
                 break;
 
             case ADDMOON:
-                systemStar.addCelestialBody(0, "Moon",TypeOfCelestianBody.MOON);
+                systemStar.addCelestialBody("Moon",TypeOfCelestianBody.MOON);
                 break;
 
             case DELETEPLANET:
@@ -117,15 +112,15 @@ public class Utilty {
                 break;
 
             case DELETEMOON:
-                if(! systemStar.deleteCelestianBody("moon",TypeOfCelestianBody.MOON)){
+                if(!systemStar.deleteCelestianBody("moon",TypeOfCelestianBody.MOON)){
                     System.out.println("Moon not found");
                 }
                 break;
 
             case FIND:
                 System.out.println("Select a type of celestial body you want to find:" + "\n" + "[P]: planet"+ "\n" + "[M]: moon");
-                str2= it.unibs.fp.mylib.InputDati.leggiStringa("\n" + msg2);
-                switch (str2.toUpperCase()) {
+
+                switch (it.unibs.fp.mylib.InputDati.leggiStringa("\n" + msg2).toUpperCase()) {
 
                     case "P":
                         typeOfCelestianBody=TypeOfCelestianBody.PLANET;
@@ -147,8 +142,7 @@ public class Utilty {
 
             case INFO:
                 System.out.println("Select a type of celestial body you want to print the info about:" + "\n" + "[P]: planet"+ "\n" + "[M]: moon");
-                str2= it.unibs.fp.mylib.InputDati.leggiStringa("\n" + msg2);
-                switch (str2.toUpperCase()) {
+                switch (it.unibs.fp.mylib.InputDati.leggiStringa("\n" + msg2).toUpperCase()) {
 
                     case "P":
                         typeOfCelestianBody=TypeOfCelestianBody.PLANET;
@@ -169,7 +163,9 @@ public class Utilty {
                 break;
 
             case CALCULATEMIDDLE:
-
+                middle = systemStar.calculateMiddle();
+                System.out.println(middle.getX());
+                System.out.println(middle.getY());
                 break;
 
             default:
@@ -177,11 +173,4 @@ public class Utilty {
                 break;
         }
     }
-
-
-    public void reset(){
-        str2 = str1 = str3 = "";
-    }
-
-
 }
