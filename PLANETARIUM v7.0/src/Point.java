@@ -3,6 +3,12 @@ public class Point {
     private float x;
     private float y;
 
+    public Point(float x,float y){
+        this.x = x;
+        this.y = y;
+    }
+
+
     public float getY() {
         return y;
     }
@@ -20,10 +26,8 @@ public class Point {
     }
 
     public Point convertionPos(Point punti ,Point puntos){
-        Point pointReturn = new Point();
-        pointReturn.x = punti.x + puntos.x;
-        pointReturn.y = punti.y + puntos.y;
-        return punti;
+        Point pointReturn = new Point((punti.x + puntos.x),(punti.y + puntos.y));
+        return pointReturn;
     }
 
 }
