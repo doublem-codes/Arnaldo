@@ -3,10 +3,15 @@ import java.util.ArrayList;
 
 public class SystemStar {
 
+<<<<<<< HEAD
     ArrayList arrayListCelestianBody = new ArrayList<CelestialBody>();
     CelestialBody celestialBody = new CelestialBody();
     Point pointMiddle = new Point();
     int numPlanet = 0;
+=======
+    ArrayList<CelestialBody> arrayListCelestianBody = new ArrayList<>();
+    Integer numPlanet = 0;
+>>>>>>> 40f7ec1a39e126ce7abb5c0c072205e5f1715684
 
     public CelestialBody getCelestialBody(int index) {
         return (CelestialBody) arrayListCelestianBody.get(index);
@@ -14,16 +19,20 @@ public class SystemStar {
 
     public void addCelestialBody(int index, String strType, TypeOfCelestianBody typeOfCelestianBody){
 
-        if (typeOfCelestianBody == TypeOfCelestianBody.PLANET && numPlanet <26000){
+        if (typeOfCelestianBody == TypeOfCelestianBody.PLANET && numPlanet >26000){
             System.out.println("! ! ! ERROR reached maximum number of planets ! ! ! " );
             return;
         }
 
-        Point pointPass = new Point();
-        Point pointRight = new Point();
+        Point pointPass = new Point(0,0);
         boolean pos = false;
+<<<<<<< HEAD
 
         System.out.println("");
+=======
+        String strName = InputDati.leggiStringa("insert the name of " +strType +":");
+        int massa = InputDati.leggiIntero("insert weight of " + strType+ ":");
+>>>>>>> 40f7ec1a39e126ce7abb5c0c072205e5f1715684
         switch (InputDati.leggiStringa("insert the position \n [R] if relative \n [A] if absolute"+"\nInsert ...\n").toUpperCase()){
             case "A":
                 pos = true;
@@ -37,15 +46,36 @@ public class SystemStar {
         pointPass.setY(InputDati.leggiIntero("Insert the x of "+ strType +":"));
         pointPass.setX(InputDati.leggiIntero("Insert the y of "+ strType +":"));
 
+<<<<<<< HEAD
         switch (typeOfCelestianBody){
             case STAR:
 
                 break;
             case PLANET:
 
+=======
+
+        switch (typeOfCelestianBody){
+            case STAR:
+                Id idS = new Id(strName,typeOfCelestianBody);
+                CelestialBody cbS = new CelestialBody(strName,massa,0,pointPass.getX(),pointPass.getY(),idS);
+                arrayListCelestianBody.add(0,cbS);
+                break;
+            case PLANET:
+                float x=0;
+                float y=0;
+                if (pos){
+                     x= pointPass.getX() + getCelestialBody(0).getPositionAbs().getX();
+                     y= pointPass.getY() + getCelestialBody(0).getPositionAbs().getY();
+                }
+                Id idP = new Id(strName,typeOfCelestianBody);
+                CelestialBody cbP = new CelestialBody(strName,massa,0,x,y,idP);
+                arrayListCelestianBody.add(cbP);
+>>>>>>> 40f7ec1a39e126ce7abb5c0c072205e5f1715684
                 numPlanet++;
                 break;
             case MOON:
+
                 String strNamePlanet=InputDati.leggiStringa("Insert the planet: ");
                 int indexPlanet = findIndexCelestianBody(strNamePlanet);
                 if(getCelestialBody(indexPlanet).getNumMoon()>5000){
@@ -53,7 +83,20 @@ public class SystemStar {
                 }
                 int num = getCelestialBody(indexPlanet).getNumMoon()+1;
                 getCelestialBody(indexPlanet).setNumMoon(num);
+<<<<<<< HEAD
 
+=======
+                float xm=0;
+                float ym=0;
+                if (pos){
+                    xm= pointPass.getX() + getCelestialBody(indexPlanet).getPositionAbs().getX();
+                    ym= pointPass.getY() + getCelestialBody(indexPlanet).getPositionAbs().getY();
+                }
+
+                Id idM = new Id(strName,typeOfCelestianBody);
+                CelestialBody cbM = new CelestialBody(strName,massa,0,xm,ym,idM);
+                arrayListCelestianBody.add(indexPlanet+1,cbM);
+>>>>>>> 40f7ec1a39e126ce7abb5c0c072205e5f1715684
                 break;
         }
     }
@@ -90,7 +133,7 @@ public class SystemStar {
     }
 
     public Point calculateMiddle(){
-        Point point = new Point();
+        Point point = new Point(0,0);
         float x = 0,y = 0;
         float sommaMasse = 0 ;
         for (int i = 0; i < arrayListCelestianBody.size(); i++){

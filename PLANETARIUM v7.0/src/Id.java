@@ -2,15 +2,21 @@ public class Id {
     private String id;
     private TypeOfCelestianBody typeOfCelestianBody ;
 
+    public Id(String strings , TypeOfCelestianBody types){
+        this.id = calculateId(strings);
+        this.typeOfCelestianBody = types;
+
+    }
 
     public String getId(){
         return id;
     }
+
     public TypeOfCelestianBody getTypeOfCelestianBody() {
         return typeOfCelestianBody;
     }
 
-    public void setId(String strings , TypeOfCelestianBody types){
+    public String calculateId(String strings ){
         String app1;
         String stringTrim = strings.trim();//delete space from string
         String app = deleteVocal(stringTrim.toUpperCase());//deletevocal from string
@@ -31,8 +37,7 @@ public class Id {
                 app1 = app.substring(0, 4);
                 break;
         }
-        this.id = app1;
-        this.typeOfCelestianBody = types;
+        return app1;
     }
 
     private String changeVocal(String s){

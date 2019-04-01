@@ -169,9 +169,7 @@ public class Utilty {
                 break;
 
             case CALCULATEMIDDLE:
-                systemStar.pointMiddle = systemStar.calculateMiddle();
-                System.out.printf("Coordinate of middle X: %f" , systemStar.pointMiddle.getX());
-                System.out.printf("\nCoordinate of middle Y: %f" ,systemStar.pointMiddle.getY() );
+
                 break;
 
             default:
