@@ -16,6 +16,10 @@ public class CelestialBody {
         this.point = point;
     }
 
+    public CelestialBody(String str, int massa, int x, int y){
+        this.name = str;
+        this.massa = massa;
+    }
 
     public Point getPositionAbs() {
         return positionAbs;

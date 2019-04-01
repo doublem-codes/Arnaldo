@@ -99,21 +99,22 @@ public class Utilty {
     }
 
     SystemStar systemStar = new SystemStar();
+    int count=1;
     public void process(){
 
         int index = 0;
 
         switch (state) {
             case ADDSTAR:
-                systemStar.addCelestialBody(0, "Star", TypeOfCelestianBody.STAR);
+                systemStar.addCelestialBody("Star", TypeOfCelestianBody.STAR);
                 break;
 
             case ADDPLANET:
-                systemStar.addCelestialBody(0, "Planet",TypeOfCelestianBody.PLANET);
+                systemStar.addCelestialBody("Planet",TypeOfCelestianBody.PLANET);
                 break;
 
             case ADDMOON:
-                systemStar.addCelestialBody(0, "Moon",TypeOfCelestianBody.MOON);
+                systemStar.addCelestialBody("Moon",TypeOfCelestianBody.MOON);
                 break;
 
             case DELETEPLANET:

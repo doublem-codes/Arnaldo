@@ -6,7 +6,7 @@ public class SystemStar {
     ArrayList arrayListCelestianBody = new ArrayList<CelestialBody>();
     CelestialBody celestialBody = new CelestialBody();
     Point pointMiddle = new Point();
-    Integer numPlanet = 0;
+    int numPlanet = 0;
 
     public CelestialBody getCelestialBody(int index) {
         return (CelestialBody) arrayListCelestianBody.get(index);
@@ -23,12 +23,6 @@ public class SystemStar {
         Point pointRight = new Point();
         boolean pos = false;
 
-        String strName1=it.unibs.fp.mylib.InputDati.leggiStringa("Insert name "+ strType +":");
-        celestialBody.setName(strName1);
-
-        int nMass1= InputDati.leggiIntero("Insert mass of "+ strName1 + ":");
-        celestialBody.setMassa(nMass1);
-
         System.out.println("");
         switch (InputDati.leggiStringa("insert the position \n [R] if relative \n [A] if absolute"+"\nInsert ...\n").toUpperCase()){
             case "A":
@@ -42,18 +36,13 @@ public class SystemStar {
         }
         pointPass.setY(InputDati.leggiIntero("Insert the x of "+ strType +":"));
         pointPass.setX(InputDati.leggiIntero("Insert the y of "+ strType +":"));
+
         switch (typeOfCelestianBody){
             case STAR:
-                celestialBody.getIdCEl().setId(strName1,TypeOfCelestianBody.STAR);
-                System.out.println("ID creato: " + celestialBody.getIdCEl().getId());
-                arrayListCelestianBody.add(0,celestialBody);
+
                 break;
             case PLANET:
-                celestialBody.getIdCEl().setId(strName1,TypeOfCelestianBody.PLANET);
-                System.out.println("ID creato: " + celestialBody.getIdCEl().getId());
-                pointRight.convertionPos(pointPass,getCelestialBody(0).getPositionAbs());
-                celestialBody.setPositionAbs(pointRight);
-                arrayListCelestianBody.add(celestialBody);
+
                 numPlanet++;
                 break;
             case MOON:
@@ -64,11 +53,7 @@ public class SystemStar {
                 }
                 int num = getCelestialBody(indexPlanet).getNumMoon()+1;
                 getCelestialBody(indexPlanet).setNumMoon(num);
-                celestialBody.getIdCEl().setId(strName1,TypeOfCelestianBody.MOON);
-                System.out.println("\nID creato: " + celestialBody.getIdCEl().getId()+ "\n");
-                pointRight.convertionPos(pointPass,getCelestialBody(indexPlanet).getPositionAbs());
-                celestialBody.setPositionAbs(pointRight);
-                arrayListCelestianBody.add(indexPlanet+1,celestialBody);
+
                 break;
         }
     }

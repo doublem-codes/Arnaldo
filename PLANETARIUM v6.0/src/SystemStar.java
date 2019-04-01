@@ -1,58 +1,46 @@
-import it.unibs.fp.mylib.InputDati;
-
 import java.util.ArrayList;
 
 public class SystemStar {
 
-    ArrayList arrayListCelestianBody = new ArrayList<CelestialBody>();
-    CelestialBody celestialBody = new CelestialBody();
+    ArrayList<CelestialBody> arrayListCelestianBody = new ArrayList<>();
     Point pointMiddle = new Point();
+
 
     public ArrayList getArrayListCelestianBody() {
         return arrayListCelestianBody;
     }
 
     public CelestialBody getCelestialBody(int index) {
-        return (CelestialBody) arrayListCelestianBody.get(index);
+        return arrayListCelestianBody.get(index);
+    }
+
+    public void setCelestialBody(int index, CelestialBody celestialBody){
+        arrayListCelestianBody.set(index,celestialBody);
     }
 
     public void setArrayListPlanet(ArrayList arrayListPlanet) {
         this.arrayListCelestianBody = arrayListPlanet;
     }
 
-    public void addCelestialBody(int index, String strType, TypeOfCelestianBody typeOfCelestianBody){
+    public void addCelestialBody(String strType, TypeOfCelestianBody typeOfCelestianBody){
 
-        Point point = new Point();
 
-        String strName1=it.unibs.fp.mylib.InputDati.leggiStringa("Insert name "+ strType +":");
-        celestialBody.setName(strName1);
-        int nMass1= InputDati.leggiIntero("Insert mass of "+ strName1 + ":");
-        celestialBody.setMassa(nMass1);
-        int x =InputDati.leggiIntero("Insert the x of "+ strType +":");
-        celestialBody.point.setX(x);
-        int y =InputDati.leggiIntero("Insert the y of "+ strType +":");
-        celestialBody.point.setX(y);
 
         switch (typeOfCelestianBody){
             case STAR:
-                celestialBody.id.setId(strName1,TypeOfCelestianBody.STAR);
-                System.out.println("ID creato: " + celestialBody.id.getId());
-                arrayListCelestianBody.add(0,celestialBody);
+
                 break;
             case PLANET:
-                celestialBody.id.setId(strName1,TypeOfCelestianBody.PLANET);
-                System.out.println("ID creato: " + celestialBody.id.getId());
-                arrayListCelestianBody.add(celestialBody);
+                String str= it.unibs.fp.mylib.InputDati.leggiStringa("Nome pianeta: ");
+                CelestialBody cb = new CelestialBody();
+                arrayListCelestianBody.add(cb);
                 break;
             case MOON:
-                String strNamePlanet=InputDati.leggiStringa("Insert the planet: ");
-                int indexPlanet = findIndexCelestianBody(strNamePlanet);
-                celestialBody.id.setId(strName1,TypeOfCelestianBody.MOON);
-                System.out.println("\nID creato: " + celestialBody.id.getId()+ "\n");
-                arrayListCelestianBody.add(indexPlanet+1,celestialBody);
+
                 break;
         }
-            }
+
+    }
 
     public boolean deleteCelestianBody(String strType){
 
@@ -97,12 +85,9 @@ public class SystemStar {
                 if (findIndexCelestianBody(str2) != -1){
                     int i;
                     boolean flag =false;
-                    for (i=findIndexCelestianBody(str2);flag;i++){
+                    for (i=findIndexCelestianBody(str2);i<getArrayListCelestianBody().size();i++){
                         if (getCelestialBody(i).id.typeOfCelestianBody != TypeOfCelestianBody.PLANET){
-
                             System.out.println(getCelestialBody(i).getName());
-                        }else {
-                            flag=true;
                         }
                     }
                     return true;
@@ -111,13 +96,13 @@ public class SystemStar {
 
             case MOON:
                 String str3= it.unibs.fp.mylib.InputDati.leggiStringa("Insert the" + strType +" name you want to print the info about: ");
+
                 if (findIndexCelestianBody(str3) != -1){
                     int i;
                     boolean flag=false;
-                    for (i=findIndexCelestianBody(str3)-1;flag;i--){
+                    for (i=findIndexCelestianBody(str3)-1;i<getArrayListCelestianBody().size();i--){
                         if (getCelestialBody(i).id.typeOfCelestianBody == TypeOfCelestianBody.PLANET) {
                             System.out.println(getCelestialBody(0).getName() + "->" +getCelestialBody(i).getName() + str3);
-                            flag = true;
                         }
                     }
                     return true;
@@ -125,8 +110,8 @@ public class SystemStar {
 
                 break;
         }
-
         return false;
+
     }
 
     public boolean findCelestialBody (String strType, TypeOfCelestianBody typeOfCelestianBody) {
@@ -153,12 +138,9 @@ public class SystemStar {
                     }
                     return true;
                 }
-
                 break;
         }
-
         return false;
     }
-
 
 }
