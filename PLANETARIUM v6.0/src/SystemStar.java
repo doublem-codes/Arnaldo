@@ -22,43 +22,37 @@ public class SystemStar {
 
     public void addCelestialBody(int index, String strType, TypeOfCelestianBody typeOfCelestianBody){
 
+        Point point = new Point();
+
+        String strName1=it.unibs.fp.mylib.InputDati.leggiStringa("Insert name "+ strType +":");
+        celestialBody.setName(strName1);
+        int nMass1= InputDati.leggiIntero("Insert mass of "+ strName1 + ":");
+        celestialBody.setMassa(nMass1);
+        int x =InputDati.leggiIntero("Insert the x of "+ strType +":");
+        celestialBody.point.setX(x);
+        int y =InputDati.leggiIntero("Insert the y of "+ strType +":");
+        celestialBody.point.setX(y);
+
         switch (typeOfCelestianBody){
             case STAR:
-                String strName1=it.unibs.fp.mylib.InputDati.leggiStringa("Insert name "+ strType +":");
-                celestialBody.setName(strName1);
-                int nMass1= InputDati.leggiIntero("Insert mass of "+ strName1 + ":");
-                celestialBody.setMassa(nMass1);
                 celestialBody.id.setId(strName1,TypeOfCelestianBody.STAR);
                 System.out.println("ID creato: " + celestialBody.id.getId());
                 arrayListCelestianBody.add(0,celestialBody);
                 break;
             case PLANET:
-                String strName2=it.unibs.fp.mylib.InputDati.leggiStringa("Insert name "+ strType +":");
-                celestialBody.setName(strName2);
-                int nMass2= InputDati.leggiIntero("Insert mass of "+ strName2 + ":");
-                celestialBody.setMassa(nMass2);
-                celestialBody.id.setId(strName2,TypeOfCelestianBody.PLANET);
+                celestialBody.id.setId(strName1,TypeOfCelestianBody.PLANET);
                 System.out.println("ID creato: " + celestialBody.id.getId());
                 arrayListCelestianBody.add(celestialBody);
                 break;
             case MOON:
-                String strName3=it.unibs.fp.mylib.InputDati.leggiStringa("Insert name "+ strType +":");
-                celestialBody.setName(strName3);
-                int nMass3= InputDati.leggiIntero("Insert mass of "+ strName3 + ":");
-                celestialBody.setMassa(nMass3);
                 String strNamePlanet=InputDati.leggiStringa("Insert the planet: ");
                 int indexPlanet = findIndexCelestianBody(strNamePlanet);
-                celestialBody.id.setId(strName3,TypeOfCelestianBody.MOON);
+                celestialBody.id.setId(strName1,TypeOfCelestianBody.MOON);
                 System.out.println("\nID creato: " + celestialBody.id.getId()+ "\n");
                 arrayListCelestianBody.add(indexPlanet+1,celestialBody);
                 break;
         }
-
-
-
-
-
-    }
+            }
 
     public boolean deleteCelestianBody(String strType){
 
@@ -96,14 +90,16 @@ public class SystemStar {
 
     public boolean printInfoBody(String strType, TypeOfCelestianBody typeOfCelestianBody){
 
+
         switch (typeOfCelestianBody) {
             case PLANET:
                 String str2= it.unibs.fp.mylib.InputDati.leggiStringa("Insert the" + strType +" name you want to print the info about ");
                 if (findIndexCelestianBody(str2) != -1){
                     int i;
                     boolean flag =false;
-                    for (i=findIndexCelestianBody(str2)+1;flag;i++){
+                    for (i=findIndexCelestianBody(str2);flag;i++){
                         if (getCelestialBody(i).id.typeOfCelestianBody != TypeOfCelestianBody.PLANET){
+
                             System.out.println(getCelestialBody(i).getName());
                         }else {
                             flag=true;

@@ -6,6 +6,16 @@ public class CelestialBody {
     Id id = new Id();
     private Point positionAbs;
     private Point positionRel;
+    Point point = new Point();
+
+    public Point getPoint() {
+        return point;
+    }
+
+    public void setPoint(Point point) {
+        this.point = point;
+    }
+
 
     public Point getPositionAbs() {
         return positionAbs;
