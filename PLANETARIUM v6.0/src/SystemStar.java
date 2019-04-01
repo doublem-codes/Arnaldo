@@ -28,8 +28,8 @@ public class SystemStar {
                 celestialBody.setName(strName1);
                 int nMass1= InputDati.leggiIntero("Insert mass of "+ strName1 + ":");
                 celestialBody.setMassa(nMass1);
-                celestialBody.setId(strName1,0);
-                System.out.println("ID creato: " + celestialBody.getId());
+                celestialBody.id.setId(strName1,TypeOfCelestianBody.STAR);
+                System.out.println("ID creato: " + celestialBody.id.getId());
                 arrayListCelestianBody.add(0,celestialBody);
                 break;
             case PLANET:
@@ -37,8 +37,8 @@ public class SystemStar {
                 celestialBody.setName(strName2);
                 int nMass2= InputDati.leggiIntero("Insert mass of "+ strName2 + ":");
                 celestialBody.setMassa(nMass2);
-                celestialBody.setId(strName2,0);
-                System.out.println("ID creato: " + celestialBody.getId());
+                celestialBody.id.setId(strName2,TypeOfCelestianBody.PLANET);
+                System.out.println("ID creato: " + celestialBody.id.getId());
                 arrayListCelestianBody.add(celestialBody);
                 break;
             case MOON:
@@ -48,8 +48,8 @@ public class SystemStar {
                 celestialBody.setMassa(nMass3);
                 String strNamePlanet=InputDati.leggiStringa("Insert the planet: ");
                 int indexPlanet = findIndexCelestianBody(strNamePlanet);
-                celestialBody.setId(strName3,0);
-                System.out.println("\nID creato: " + celestialBody.getId()+ "\n");
+                celestialBody.id.setId(strName3,TypeOfCelestianBody.MOON);
+                System.out.println("\nID creato: " + celestialBody.id.getId()+ "\n");
                 arrayListCelestianBody.add(indexPlanet+1,celestialBody);
                 break;
         }
