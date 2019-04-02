@@ -4,6 +4,8 @@ import java.util.ArrayList;
 public class SystemStar {
     ArrayList<CelestialBody> arrayListCelestianBody = new ArrayList<>();
     Point middle = new Point(0, 0);
+    private static int maxNumberplanet = 26000;
+    private static int maxNumberMoon = 5000;
 
     public Point getMiddle() {
         return middle;
@@ -22,7 +24,7 @@ public class SystemStar {
     //metod used to add element at arrayList
     public void addCelestialBody(String strType, TypeOfCelestianBody typeOfCelestianBody) {
 
-        if (typeOfCelestianBody == TypeOfCelestianBody.PLANET && numPlanet > 26000) {//check number max planet
+        if (typeOfCelestianBody == TypeOfCelestianBody.PLANET && numPlanet > maxNumberplanet) {//check number max planet
             System.out.println("! ! ! ERROR reached maximum number of planets ! ! ! ");
             return;
         }
@@ -77,10 +79,10 @@ public class SystemStar {
                 break;
 
             case MOON:
-                String strNamePlanet = "";
+                String strNamePlanet ;
                 strNamePlanet = InputDati.leggiStringa("Insert the planet: "); // input name planet of planet
                 int indexPlanet = findIndexCelestianBody(strNamePlanet);// extract index of planet
-                if (getCelestialBody(indexPlanet).getNumMoon() > 5000) {//check number max moon
+                if (getCelestialBody(indexPlanet).getNumMoon() > maxNumberMoon) {//check number max moon
                     System.out.println("! ! ! ERROR reached maximum number of moon for this planet ! ! ! ");
                     return;
                 }

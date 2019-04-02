@@ -5,7 +5,7 @@ public class CelestialBody {
     private Id idCel;
     private Point positionAbs ;
 
-    public CelestialBody(String name,int massa, int numMoon ,float x, float y,Id idCel){
+    public CelestialBody(String name, int massa, int numMoon , float x, float y, Id idCel){
         this.name = name;
         this.massa = massa;
         this.numMoon = numMoon;
