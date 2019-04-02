@@ -3,52 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d5817c5f-d124-41f1-8c94-8e7356750e6e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/PLANETARIUM.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/out/production/PLANETARIUM/CelestialBody.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/out/production/PLANETARIUM/Id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/out/production/PLANETARIUM/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/out/production/PLANETARIUM/Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/out/production/PLANETARIUM/State.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/out/production/PLANETARIUM/SystemStar$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/out/production/PLANETARIUM/SystemStar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/out/production/PLANETARIUM/TypeOfCelestianBody.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/out/production/PLANETARIUM/UniBSFpLib/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/out/production/PLANETARIUM/UniBSFpLib/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/out/production/PLANETARIUM/Utilty$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/out/production/PLANETARIUM/Utilty.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/out/production/PLANETARIUM/it/unibs/fp/mylib/BelleStringhe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/out/production/PLANETARIUM/it/unibs/fp/mylib/EstrazioniCasuali.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/out/production/PLANETARIUM/it/unibs/fp/mylib/InputDati.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/out/production/PLANETARIUM/it/unibs/fp/mylib/MyMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/out/production/PLANETARIUM/it/unibs/fp/mylib/NumeriCasuali.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/out/production/PLANETARIUM/it/unibs/fp/mylib/ServizioFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/CelestialBody.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/Id.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/Point.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/State.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/TypeOfCelestianBody.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/UniBSFpLib/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/UniBSFpLib/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/UniBSFpLib/bin/it/unibs/fp/mylib/BelleStringhe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/UniBSFpLib/bin/it/unibs/fp/mylib/EstrazioniCasuali.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/UniBSFpLib/bin/it/unibs/fp/mylib/InputDati.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/UniBSFpLib/bin/it/unibs/fp/mylib/MyMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/UniBSFpLib/bin/it/unibs/fp/mylib/NumeriCasuali.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/UniBSFpLib/bin/it/unibs/fp/mylib/ServizioFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/UniBSFpLib/src/it/unibs/fp/mylib/BelleStringhe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/UniBSFpLib/src/it/unibs/fp/mylib/EstrazioniCasuali.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/UniBSFpLib/src/it/unibs/fp/mylib/InputDati.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/UniBSFpLib/src/it/unibs/fp/mylib/MyMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/UniBSFpLib/src/it/unibs/fp/mylib/NumeriCasuali.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/UniBSFpLib/src/it/unibs/fp/mylib/ServizioFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PLANETARIUM v7.0/src/Utilty.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -183,7 +137,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1" />
     <option name="y" value="48" />
     <option name="width" value="1280" />
@@ -274,15 +228,15 @@
       <workItem from="1554126861184" duration="3208000" />
       <workItem from="1554130609693" duration="3597000" />
       <workItem from="1554143485065" duration="2080000" />
-      <workItem from="1554146528668" duration="314000" />
+      <workItem from="1554146528668" duration="395000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59788000" />
+    <option name="totallyTimeSpent" value="59869000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="48" width="1280" height="752" extended-state="1" />
+    <frame x="1" y="48" width="1280" height="752" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16801292" />
