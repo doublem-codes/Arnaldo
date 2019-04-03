@@ -188,7 +188,7 @@ public class SystemStar {
                     int indexMoon = findIndexCelestianBody(str3);
 
                     int newindex = findIndexPlanet(indexMoon,typeOfCelestianBody);
-                    System.out.println(getCelestialBody(0).getName() + "->" + getCelestialBody(newindex).getName() + "->"
+                    System.out.println(getCelestialBody(0).getName() + "->" + getCelestialBody(newindex+1).getName() + "->"
                             + getCelestialBody(indexMoon).getName());
                     return true;
                 }
@@ -238,13 +238,13 @@ public class SystemStar {
         int state = 0;
         String str2;
         do {
-            str2 = it.unibs.fp.mylib.InputDati.leggiStringa("Insert the name of " + strType1 + "to start:");//input name
+            str2 = it.unibs.fp.mylib.InputDati.leggiStringa("Insert the name of " + strType1 + " to start:");//input name
         }while (findIndexCelestianBody(str2) == -1) ;
         int index1 = findIndexCelestianBody(str2);
 
         String str3;
         do {
-            str3 = it.unibs.fp.mylib.InputDati.leggiStringa("Insert the name of " + strType2 + "to move:");//input name
+            str3 = it.unibs.fp.mylib.InputDati.leggiStringa("Insert the name of " + strType2 + " to move:");//input name
         }while (findIndexCelestianBody(str3) == -1 );
         int index2 = findIndexCelestianBody(str3);
         //setting diffrent case of road
@@ -279,13 +279,13 @@ public class SystemStar {
                             getCelestialBody(0).getName() + "->" +
                             getCelestialBody(indexPlanet2).getName() + "->" +
                             getCelestialBody(index2).getName());
-                    System.out.print("total distance is " + road2);
+                    System.out.println("total distance is " + road2);
                 }else{
                     double road2 = calculateRoadDistance(index1,indexPlanet1)*2;
                     System.out.println(getCelestialBody(index1).getName() + "->" +
                             getCelestialBody(indexPlanet1).getName() + "->" +
                             getCelestialBody(index2).getName());
-                    System.out.print("total distance is " + road2);
+                    System.out.println("total distance is " + road2);
                 }
                 break;
 
